@@ -10,7 +10,7 @@ export default function Form() {
 
   const insert = async (data) => {
     try {
-      await supabase.from("questions").insert(data);
+      await supabase.from("answers").insert(data);
     } catch (error) {
       console.log(error.message);
     }
@@ -29,7 +29,7 @@ export default function Form() {
             <div className='mb-10'>
               <h1>Nom et Prénom :</h1>
               <p>Veuillez saisir votre nom puis votre prénom, si vous avez des prénoms secondaires n'hésitez pas à la ajouter à la suite.</p>
-              <input className="rounded border-2 border-gray-200 w-full" type="text" name="firstname" {...register("firstname")}></input>
+              <input className="rounded border-2 border-gray-200 w-full" type="text" name="names" {...register("names")}></input>
             </div>
 
             <div className='mb-10'>
@@ -104,7 +104,7 @@ export default function Form() {
             <div className='mb-10'>
               <h1>Avis :</h1>
               <p>Avez-vous des suggestions ou des idées pour améliorer nos services ?</p>
-              <textarea className="rounded border-2 border-gray-200 w-full" name="situation" {...register("situation")}></textarea>
+              <textarea className="rounded border-2 border-gray-200 w-full" name="opinion" {...register("opinion")}></textarea>
             </div>
 
             <button className='max-sm:hidden font-semibold py-2 px-4 rounded border border-gray-100'>Envoyer vos réponses<i className="ml-3 fa-solid fa-square-arrow-up-right"></i></button>
