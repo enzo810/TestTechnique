@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button {
+  background-color: #c0abd4;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: large;
+  font-weight: 500;
+}
+
+p, label, input, select {
+font-family: Arial, sans-serif;
+}
+
+@media (max-width: 570px) {
+  .container {
+    width: 90%;
+  }
+
+  p, label, input, select {
+    font-size: small;
+  }
+
+  h1 {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 425px) {
+  p, label, input, select {
+    font-size: x-small;
+  }
+
+  h1 {
+    font-size: small;
+  }
+
+  button {
+    font-size: small;
+  }
+}
+
+@media (max-width: 370px) {
+  p, label, input, select {
+    font-size: xx-small;
+  }
+
+  h1 {
+    font-size: x-small;
+  }
+
+  button {
+    font-size: x-small;
+  }
+}
