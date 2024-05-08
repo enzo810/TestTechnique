@@ -45,7 +45,7 @@ export default function adminForm() {
         <div className='mx-auto container border border-gray-300 rounded bg-white p-4 mb-2'>
           <form onSubmit={(e) => {uploadImage(e)}}>
               <label className='font-semibold' htmlFor='image'>Changer l'image du questionnaire :</label>&nbsp;&nbsp;
-              <input type="file" name="image" id='image' accept="image/png, image/jpeg"/>
+              <input type="file" name="image" id='image' accept="image/jpeg"/>
               <div className='flex justify-end'>
                 <button className='font-light py-2 px-4 rounded border border-gray-100'>Modifier&nbsp;&nbsp;<FontAwesomeIcon icon={faSquareArrowUpRight}/></button>
               </div>
