@@ -2,13 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-button {
-  background-color: #c0abd4;
-}
-
 .container {
   width: 500px;
-  margin: 0 auto;
 }
 
 h1 {
@@ -20,22 +15,35 @@ p, label, input, select {
 font-family: Arial, sans-serif;
 }
 
+button {
+  background-color: #F9E1E4
+}
+
+.navButtons {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 @media (max-width: 570px) {
   .container {
     width: 90%;
   }
 
-  p, label, input, select {
+  p, label, input, select, textarea {
     font-size: small;
   }
 
   h1 {
     font-size: medium;
   }
+
+  .navButtons {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+  }
 }
 
 @media (max-width: 425px) {
-  p, label, input, select {
+  p, label, input, select, textarea {
     font-size: x-small;
   }
 
@@ -46,10 +54,16 @@ font-family: Arial, sans-serif;
   button {
     font-size: small;
   }
+
+  .navButtons {
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    font-size: large;
+  }
 }
 
 @media (max-width: 370px) {
-  p, label, input, select {
+  p, label, input, select, textarea {
     font-size: xx-small;
   }
 
@@ -59,5 +73,11 @@ font-family: Arial, sans-serif;
 
   button {
     font-size: x-small;
+  }
+
+  .navButtons {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: medium;
   }
 }
